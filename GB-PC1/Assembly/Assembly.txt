@@ -10,8 +10,8 @@ Assemble the GnuBee Personal Cloud One as shown in the Photos.
 	
 
 2. Photo shows the brackets installed on the PCBA.
-	Only lightly tightening these screws at this stage of assembly.
-	This will ease the installation of the side plates next. 
+	Only lightly tighten these screws at this stage of assembly.
+	This will ease the installation of the side plates in the next step. 
 
 3. Photo shows the PCBA with brackets installed.
 
