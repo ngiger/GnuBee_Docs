@@ -1,0 +1,9 @@
+7d41b35452c4c617dbc392001616232821682f01db7e71e10023cb9e7ed4b923 *config.seed
+834c9685c9e4f71af1daa42663bfab0fe333a6a10f9fb0d2480ec8321041b213 *librecmc-07aug-mt7621-gb-pc1-squashfs-sysupgrade.bin
+89755c6ab4aec26cb1d0ce32220eb8702bef096300f2d1de796beb258b994c9a *librecmc-imagebuilder-ramips-mt7621.Linux-x86_64.tar.xz
+bac574e34ff9499f557b81bbddae91fa1dfb82c4138a2231743b8c736f5dec76 *librecmc-master-gb-pc1-squashfs-sysupgrade.bin
+57b0815f3b5ca9acb86083f22c3de2aa2d808502fd562c73ab373ff4e7949423 *librecmc-ramips-mt7621-device-gb-pc1.manifest
+34f04e22286ea0af4233b746cfb784e564bd93e99463626f948f40eec2423958 *librecmc-ramips-mt7621-gb-pc1-squashfs-sysupgrade.bin
+0a3a36060158f43febb99a4e1b3b9b35b10d646292f5a7e86c7149da06e2fa6a *librecmc-sdk-ramips-mt7621_gcc-5.4.0_musl-1.1.16.Linux-x86_64.tar.xz
+d51e5e0305b5f54201e2d4efa1432310df252e2a1ce726ef2eac9ebf1131d59a *librecmc-toolchain-ramips-mt7621_gcc-5.4.0_musl-1.1.16.Linux-x86_64.tar.bz2
+2c22ea8e157ef178bf5fe1c46c3f42d448607e92a1656bc7ae371202b9c3e002 *librecmc-v1.4-gb-pc1-squashfs-sysupgrade.bin
