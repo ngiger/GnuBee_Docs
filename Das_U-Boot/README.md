@@ -12,13 +12,18 @@ Place the new firmware on a USB stick (msdos format)
 
 RENAME the firmware gnubee.bin
 
-Then reboot the device ... the boot-loader reads the file then updates the firmware.
+Then reboot the device ... the Boot Loader reads the file then updates the firmware.
 
-While loading the new firmware the LEDs will give an indication or reading/writing.
+While loading the new firmware the LEDs will give an indication of reading/writing.
 
-Lower LED fast blink = read, slow blink = write, solid = done.
+Lower LED : 
+fast blink = reading 
+slow blink = write 
+solid = done.
 
-When the upper LED changes from off to on solid it's time to remove the USB Stick and reboot into the new firmware.
+Upper LED : 
+OFF during the update 
+ON remove the USB Stick and reboot.
 
 
 ## TODO:
