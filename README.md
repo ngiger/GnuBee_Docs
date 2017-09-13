@@ -8,7 +8,7 @@ You can find instructions on how to assemble the parts you received under [GB-PC
 
 ## How to upgrade your firmware using Das U-Boot -- the Universal Boot Loader
 
-You can find instruction on the GnuBee Boot Loader at [Das_U-Boot]
+You can find instruction on the GnuBee Boot Loader at [Das_U-Boot](Das_U-Boot)
 
 
 ## Debugging early boot sequence using TTY->USB
