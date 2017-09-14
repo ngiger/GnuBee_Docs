@@ -1,0 +1,36 @@
+#!/usr/bin/ruby
+require 'jekyll'
+require 'jekylltask'
+
+begin
+
+desc 'Generate Rosa Luna web page  in _site/'
+JekyllTask.new 'jekyll' do |task|
+  task.source = '.'
+  task.target = '_site'
+end
+
+desc 'Build a copy of the Web site in the ./_site'
+task 'site' => ['_site'] do
+  open('_site/.htaccess', 'w') do |htaccess|
+    htaccess << %Q{
+<FilesMatch "CHANGELOG">
+ForceType 'text/plain; charset=UTF-8'
+</FilesMatch>
+}
+  end
+  puts 'OK'
+end
+
+task 'clobber' do
+  rm_rf '_site'
+end
+
+desc 'start a web-server for this site under http://127.0.0.1:4000'
+task  :webserver  => :site do
+   system("bundle exec jekyll server")
+end
+
+rescue Exception => e
+  puts "Exception in #{__FILE__}: #{e}"
+end

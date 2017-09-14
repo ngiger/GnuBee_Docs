@@ -1,0 +1,6 @@
+*~
+_gh_pages/
+_site/
+.ruby-version
+.sass-cache/
+Gemfile.lock
