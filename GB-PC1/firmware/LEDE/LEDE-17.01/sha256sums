@@ -1,7 +1,0 @@
-5fc064e46b72b644f04146aa329e7f3b62ac3cacaee6b3dc782909c27dcee262 *config.seed
-a627b6bd6fcfbcf5270ab8b89801f43b9905035a4269d702bb27b9fa4a394ca4 *lede-17.01-gb-pc1-squashfs-sysupgrade.bin
-2321da4d1a728d3943a62787d115c9d726a6bd1317303d8963b3bab1f0d55ca3 *lede-imagebuilder-ramips-mt7621.Linux-x86_64.tar.xz
-739a6651158b51d400698b0e1c408e16120e900c0351589ecf584e5232780abe *lede-ramips-mt7621-device-gb-pc1.manifest
-7a85d95848e9e165eadc7e624985f71d757d5a24d7dee0d194f7f62bc568b985 *lede-ramips-mt7621-gb-pc1-squashfs-sysupgrade.bin
-bb87111ee15fda929e72b94d3fe61e33b3251a868caf852832b16ab2abf98a49 *lede-sdk-ramips-mt7621_gcc-5.4.0_musl-1.1.16.Linux-x86_64.tar.xz
-2384ea2d1dfc4c1931d9a18fd38adb28e69c10d317bffd661e8fbb45e51c747a *lede-toolchain-ramips-mt7621_gcc-5.4.0_musl-1.1.16.Linux-x86_64.tar.bz2
