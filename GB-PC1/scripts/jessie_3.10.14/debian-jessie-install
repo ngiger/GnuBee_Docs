@@ -1,5 +1,7 @@
 #!/bin/ash
 
+set -e # exit immedidately if an error occurs
+
 failed(){
    echo "Error: Command $1 failed."
    exit 1
@@ -39,9 +41,10 @@ EOF
   echo "10 */4 * * * root /usr/sbin/ntpdate -u pool.ntp.org " > /tmp/newroot/etc/cron.d/ntp
   sed -i "s/^exit 0/ntpdate -u pool.ntp.org\nexit 0/g" /tmp/newroot/etc/rc.local
   echo "gnubee-n1.gnubee" > /tmp/newroot/etc/hostname
-  echo "LABEL=GNUBEE-ROOT /  ext4  noatime,errors=remount-ro 0  1" >> /tmp/newroot/etc/fstab
   sed -i "s/^127.0.0.1.*/& gnubee-n1 gnubee-n1.gnubee/" /tmp/newroot/etc/hosts
   sed -i "s/^PermitRootLogin.*/PermitRootLogin yes/" /tmp/newroot/etc/ssh/sshd_config
+  echo "LABEL=GNUBEE-ROOT /  ext4  noatime,errors=remount-ro 0  1" >> /tmp/newroot/etc/fstab
+  tune2fs -L GNUBEE-ROOT ${1} 
   sync 
  
 }
@@ -54,7 +57,7 @@ format_partition(){
    then
       umount ${1}
       echo "Formatting ${1}, please wait..."
-      echo y | mkfs.ext4 -m 2 -L GNUBEE-ROOT ${1}
+      echo y | mkfs.ext4 -m 2 ${1}
       debian_install ${1}
       debian_fix
       echo "Debian successfully installed into ${1}, please reboot your device now."
