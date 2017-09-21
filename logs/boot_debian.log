@@ -1,0 +1,602 @@
+
+U-Boot 1.1.3 (Jul  9 2017 - 14:14:05)
+
+Board: MediaTek APSoC DRAM: 512 MB
+
+Config XHCI 40M PLL 
+******************************
+Software System Reset Occurred
+******************************
+MediaTek SPI flash driver, SPI clock: 32MHz
+spi device id: ef 40 19 0
+find flash: W25Q256FV
+============================================ 
+MediaTek U-Boot Version: 5.0.1.0-6
+-------------------------------------------- 
+ASIC MT7621A DualCore (MAC to MT7530 Mode)
+DRAM_CONF_FROM: Auto-Detection 
+DRAM_TYPE: DDR3 
+DRAM bus: 16 bit
+Xtal Mode=3 OCP Ratio=1/3
+Flash component: SPI Flash
+Date:Jul  9 2017  Time:14:14:05
+============================================ 
+icache: sets:256, ways:4, linesz:32, total:32768
+dcache: sets:256, ways:4, linesz:32, total:32768 
+
+ #### The CPU freq = 900 MHZ #### 
+ estimate memory size = 512 Mbytes
+
+ Reset MT7530
+set LAN/WAN WLLLL
+(Re)start USB...
+USB0:   mtk-xhci: init hccr be1c0000 and hcor be1c0020 hc_length 32
+Register 300010f NbrPorts 3
+Starting the controller
+USB XHCI 0.96
+scanning bus 0 for devices... 2 USB Device(s) found
+       scanning bus for storage devices... 0 Storage Device(s) found
+
+ No USB Storage found. Upgrade FW failed!
+
+Please choose the operation: 
+   1: Load system code to SDRAM via TFTP.
+   2: Load system code then write to Flash via TFTP.
+   3: Boot system code via Flash (default).
+   4: Enter boot command line interface.
+   5: Load system code then write to Flash via USB Storage.
+   6: Load system code then write to Flash via Httpd.
+   9: Load U-Boot code then write to Flash via TFTP.
+ 0 
+
+   
+3: System Boot system code via Flash.
+## Checking image at bc050000 ...
+   Image Name:   MIPS LEDE Linux-4.4.52
+   Image Type:   MIPS Linux Kernel Image (lzma compressed)
+   Data Size:    2345461 Bytes =  2.2 MB
+   Load Address: 80001000
+   Entry Point:  80001000
+   Verifying Checksum ... OK
+   Uncompressing Kernel Image ... OK
+No initrd
+## Transferring control to Linux (at address 80001000) ...
+## Giving linux memsize in MB, 512
+
+Starting kernel ...
+
+[    0.000000] Linux version 4.4.52-gnu (dgazineu@olimpo) (gcc version 5.4.0 (LEDE GCC 5.4.0 r20-646beea) ) #0 SMP Wed Jul 5 16:50:03 2017
+[    0.000000] SoC Type: MediaTek MT7621 ver:1 eco:3
+[    0.000000] bootconsole [early0] enabled
+[    0.000000] CPU0 revision is: 0001992f (MIPS 1004Kc)
+[    0.000000] MIPS: machine is GB-PC1
+[    0.000000] Determined physical RAM map:
+[    0.000000]  memory: 1c000000 @ 00000000 (usable)
+[    0.000000]  memory: 04000000 @ 20000000 (usable)
+[    0.000000] Initrd not found or empty - disabling initrd
+[    0.000000] Zone ranges:
+[    0.000000]   Normal   [mem 0x0000000000000000-0x000000000fffffff]
+[    0.000000]   HighMem  [mem 0x0000000010000000-0x0000000023ffffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000000000-0x000000001bffffff]
+[    0.000000]   node   0: [mem 0x0000000020000000-0x0000000023ffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000000000000-0x0000000023ffffff]
+[    0.000000] VPE topology {2,2} total 4
+[    0.000000] Primary instruction cache 32kB, VIPT, 4-way, linesize 32 bytes.
+[    0.000000] Primary data cache 32kB, 4-way, PIPT, no aliases, linesize 32 bytes
+[    0.000000] MIPS secondary cache 256kB, 8-way, linesize 32 bytes.
+[    0.000000] PERCPU: Embedded 11 pages/cpu @8148e000 s12800 r8192 d24064 u45056
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 130560
+[    0.000000] Kernel command line: console=ttyS0,57600 rootfstype=squashfs,jffs2 init=/lib/init rootdelay=5 console=ttyS0,57600n8
+[    0.000000] PID hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.000000] Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.000000] Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+[    0.000000] Writing ErrCtl register=00040380
+[    0.000000] Readback ErrCtl register=00040380
+[    0.000000] Memory: 511680K/524288K available (5438K kernel code, 253K rwdata, 1296K rodata, 232K init, 284K bss, 12608K reserved, 0K cma-reserved, 262144K highmem)
+[    0.000000] SLUB: HWalign=32, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000] NR_IRQS:256
+[    0.000000] clocksource: GIC: mask: 0xffffffffffffffff max_cycles: 0x39a85c9bff6, max_idle_ns: 881590591483 ns
+[    0.000000] sched_clock: 32 bits at 100 Hz, resolution 10000000ns, wraps every 21474836475000000ns
+[    0.000000] Calibrating delay loop... 1332.01 BogoMIPS (lpj=6660096)
+[    0.050000] pid_max: default: 32768 minimum: 301
+[    0.050000] Security Framework initialized
+[    0.060000] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.060000] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.070000] Initializing cgroup subsys io
+[    0.070000] Initializing cgroup subsys devices
+[    0.070000] Initializing cgroup subsys freezer
+[    0.080000] Initializing cgroup subsys net_cls
+[    0.080000] Initializing cgroup subsys pids
+[    0.080000] Primary instruction cache 32kB, VIPT, 4-way, linesize 32 bytes.
+[    0.080000] Primary data cache 32kB, 4-way, PIPT, no aliases, linesize 32 bytes
+[    0.080000] MIPS secondary cache 256kB, 8-way, linesize 32 bytes.
+[    0.080000] CPU1 revision is: 0001992f (MIPS 1004Kc)
+[    0.130000] Synchronize counters for CPU 1: done.
+[    0.140000] Primary instruction cache 32kB, VIPT, 4-way, linesize 32 bytes.
+[    0.140000] Primary data cache 32kB, 4-way, PIPT, no aliases, linesize 32 bytes
+[    0.140000] MIPS secondary cache 256kB, 8-way, linesize 32 bytes.
+[    0.140000] CPU2 revision is: 0001992f (MIPS 1004Kc)
+[    0.190000] Synchronize counters for CPU 2: done.
+[    0.200000] Primary instruction cache 32kB, VIPT, 4-way, linesize 32 bytes.
+[    0.200000] Primary data cache 32kB, 4-way, PIPT, no aliases, linesize 32 bytes
+[    0.200000] MIPS secondary cache 256kB, 8-way, linesize 32 bytes.
+[    0.200000] CPU3 revision is: 0001992f (MIPS 1004Kc)
+[    0.250000] Synchronize counters for CPU 3: done.
+[    0.260000] Brought up 4 CPUs
+[    0.260000] devtmpfs: initialized
+[    0.260000] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.270000] futex hash table entries: 1024 (order: 3, 32768 bytes)
+[    0.270000] xor: measuring software checksum speed
+[    0.370000]    8regs     :  1420.000 MB/sec
+[    0.470000]    8regs_prefetch:  1354.000 MB/sec
+[    0.570000]    32regs    :  1689.200 MB/sec
+[    0.670000]    32regs_prefetch:  1556.800 MB/sec
+[    0.670000] xor: using function: 32regs (1689.200 MB/sec)
+[    0.670000] pinctrl core: initialized pinctrl subsystem
+[    0.680000] NET: Registered protocol family 16
+[    0.710000] pull PCIe RST: RALINK_RSTCTRL = 0
+[    0.930000] release PCIe RST: RALINK_RSTCTRL = 7000000
+[    0.940000] ***** Xtal 40MHz *****
+[    0.940000] release PCIe RST: RALINK_RSTCTRL = 7000000
+[    0.950000] Port 0 N_FTS = 1b105000
+[    0.950000] Port 1 N_FTS = 1b105000
+[    0.950000] Port 2 N_FTS = 1b105000
+[    1.810000]  -> 21007f2
+[    1.820000] PCIE0 enabled
+[    1.820000] PCIE1 enabled
+[    1.820000] PCIE2 enabled
+[    1.820000] PCI host bridge /pcie@1e140000 ranges:
+[    1.830000]  MEM 0x0000000060000000..0x000000006fffffff
+[    1.830000]   IO 0x000000001e160000..0x000000001e16ffff
+[    1.840000] PCI coherence region base: 0x60000000, mask/settings: 0xf0000002
+[    2.050000] raid6: int32x1  gen()   197 MB/s
+[    2.220000] raid6: int32x1  xor()   213 MB/s
+[    2.390000] raid6: int32x2  gen()   366 MB/s
+[    2.560000] raid6: int32x2  xor()   268 MB/s
+[    2.730000] raid6: int32x4  gen()   362 MB/s
+[    2.900000] raid6: int32x4  xor()   256 MB/s
+[    3.070000] raid6: int32x8  gen()   327 MB/s
+[    3.240000] raid6: int32x8  xor()   233 MB/s
+[    3.240000] raid6: using algorithm int32x2 gen() 366 MB/s
+[    3.240000] raid6: .... xor() 268 MB/s, rmw enabled
+[    3.250000] raid6: using intx1 recovery algorithm
+[    3.250000] mt7621_gpio 1e000600.gpio: registering 32 gpios
+[    3.250000] mt7621_gpio 1e000600.gpio: registering 32 gpios
+[    3.260000] mt7621_gpio 1e000600.gpio: registering 32 gpios
+[    3.260000] SCSI subsystem initialized
+[    3.260000] usbcore: registered new interface driver usbfs
+[    3.270000] usbcore: registered new interface driver hub
+[    3.270000] usbcore: registered new device driver usb
+[    3.280000] i2c-mt7621 1e000900.i2c: clock 100KHz, re-start not support
+[    3.280000] PCI host bridge to bus 0000:00
+[    3.290000] pci_bus 0000:00: root bus resource [mem 0x60000000-0x6fffffff]
+[    3.290000] pci_bus 0000:00: root bus resource [io  0xffffffff]
+[    3.300000] pci_bus 0000:00: root bus resource [??? 0x00000000 flags 0x0]
+[    3.310000] pci_bus 0000:00: No busn resource found for root bus, will use [bus 00-ff]
+[    3.310000] pci 0000:00:00.0: BAR 0: no space for [mem size 0x80000000]
+[    3.320000] pci 0000:00:00.0: BAR 0: failed to assign [mem size 0x80000000]
+[    3.330000] pci 0000:00:01.0: BAR 0: no space for [mem size 0x80000000]
+[    3.330000] pci 0000:00:01.0: BAR 0: failed to assign [mem size 0x80000000]
+[    3.340000] pci 0000:00:02.0: BAR 0: no space for [mem size 0x80000000]
+[    3.340000] pci 0000:00:02.0: BAR 0: failed to assign [mem size 0x80000000]
+[    3.350000] pci 0000:00:00.0: BAR 8: assigned [mem 0x60000000-0x600fffff]
+[    3.360000] pci 0000:00:01.0: BAR 8: assigned [mem 0x60100000-0x601fffff]
+[    3.360000] pci 0000:00:02.0: BAR 8: assigned [mem 0x60200000-0x602fffff]
+[    3.370000] pci 0000:00:00.0: BAR 1: assigned [mem 0x60300000-0x6030ffff]
+[    3.370000] pci 0000:00:01.0: BAR 1: assigned [mem 0x60310000-0x6031ffff]
+[    3.380000] pci 0000:00:02.0: BAR 1: assigned [mem 0x60320000-0x6032ffff]
+[    3.390000] pci 0000:00:00.0: BAR 7: no space for [io  size 0x1000]
+[    3.390000] pci 0000:00:00.0: BAR 7: failed to assign [io  size 0x1000]
+[    3.400000] pci 0000:00:01.0: BAR 7: no space for [io  size 0x1000]
+[    3.400000] pci 0000:00:01.0: BAR 7: failed to assign [io  size 0x1000]
+[    3.410000] pci 0000:00:02.0: BAR 7: no space for [io  size 0x1000]
+[    3.420000] pci 0000:00:02.0: BAR 7: failed to assign [io  size 0x1000]
+[    3.420000] pci 0000:01:00.0: BAR 5: assigned [mem 0x60000000-0x600001ff]
+[    3.430000] pci 0000:01:00.0: BAR 4: no space for [io  size 0x0010]
+[    3.430000] pci 0000:01:00.0: BAR 4: failed to assign [io  size 0x0010]
+[    3.440000] pci 0000:01:00.0: BAR 0: no space for [io  size 0x0008]
+[    3.440000] pci 0000:01:00.0: BAR 0: failed to assign [io  size 0x0008]
+[    3.450000] pci 0000:01:00.0: BAR 2: no space for [io  size 0x0008]
+[    3.460000] pci 0000:01:00.0: BAR 2: failed to assign [io  size 0x0008]
+[    3.460000] pci 0000:01:00.0: BAR 1: no space for [io  size 0x0004]
+[    3.470000] pci 0000:01:00.0: BAR 1: failed to assign [io  size 0x0004]
+[    3.470000] pci 0000:01:00.0: BAR 3: no space for [io  size 0x0004]
+[    3.480000] pci 0000:01:00.0: BAR 3: failed to assign [io  size 0x0004]
+[    3.480000] pci 0000:00:00.0: PCI bridge to [bus 01]
+[    3.490000] pci 0000:00:00.0:   bridge window [mem 0x60000000-0x600fffff]
+[    3.500000] pci 0000:02:00.0: BAR 5: assigned [mem 0x60100000-0x601001ff]
+[    3.500000] pci 0000:02:00.0: BAR 4: no space for [io  size 0x0010]
+[    3.510000] pci 0000:02:00.0: BAR 4: failed to assign [io  size 0x0010]
+[    3.510000] pci 0000:02:00.0: BAR 0: no space for [io  size 0x0008]
+[    3.520000] pci 0000:02:00.0: BAR 0: failed to assign [io  size 0x0008]
+[    3.520000] pci 0000:02:00.0: BAR 2: no space for [io  size 0x0008]
+[    3.530000] pci 0000:02:00.0: BAR 2: failed to assign [io  size 0x0008]
+[    3.540000] pci 0000:02:00.0: BAR 1: no space for [io  size 0x0004]
+[    3.540000] pci 0000:02:00.0: BAR 1: failed to assign [io  size 0x0004]
+[    3.550000] pci 0000:02:00.0: BAR 3: no space for [io  size 0x0004]
+[    3.550000] pci 0000:02:00.0: BAR 3: failed to assign [io  size 0x0004]
+[    3.560000] pci 0000:00:01.0: PCI bridge to [bus 02]
+[    3.560000] pci 0000:00:01.0:   bridge window [mem 0x60100000-0x601fffff]
+[    3.570000] pci 0000:03:00.0: BAR 5: assigned [mem 0x60200000-0x602001ff]
+[    3.580000] pci 0000:03:00.0: BAR 4: no space for [io  size 0x0010]
+[    3.580000] pci 0000:03:00.0: BAR 4: failed to assign [io  size 0x0010]
+[    3.590000] pci 0000:03:00.0: BAR 0: no space for [io  size 0x0008]
+[    3.590000] pci 0000:03:00.0: BAR 0: failed to assign [io  size 0x0008]
+[    3.600000] pci 0000:03:00.0: BAR 2: no space for [io  size 0x0008]
+[    3.600000] pci 0000:03:00.0: BAR 2: failed to assign [io  size 0x0008]
+[    3.610000] pci 0000:03:00.0: BAR 1: no space for [io  size 0x0004]
+[    3.620000] pci 0000:03:00.0: BAR 1: failed to assign [io  size 0x0004]
+[    3.620000] pci 0000:03:00.0: BAR 3: no space for [io  size 0x0004]
+[    3.630000] pci 0000:03:00.0: BAR 3: failed to assign [io  size 0x0004]
+[    3.630000] pci 0000:00:02.0: PCI bridge to [bus 03]
+[    3.640000] pci 0000:00:02.0:   bridge window [mem 0x60200000-0x602fffff]
+[    3.640000] BAR0 at slot 0 = 0
+[    3.650000] bus=0x0, slot = 0x0
+[    3.650000] BAR0 at slot 1 = 0
+[    3.650000] bus=0x0, slot = 0x1
+[    3.650000] BAR0 at slot 2 = 0
+[    3.660000] bus=0x0, slot = 0x2
+[    3.660000] bus=0x1, slot = 0x0, irq=0x0
+[    3.660000] bus=0x2, slot = 0x1, irq=0x0
+[    3.670000] bus=0x3, slot = 0x2, irq=0x0
+[    3.670000] clocksource: Switched to clocksource GIC
+[    3.680000] NET: Registered protocol family 2
+[    3.680000] TCP established hash table entries: 2048 (order: 1, 8192 bytes)
+[    3.680000] TCP bind hash table entries: 2048 (order: 2, 16384 bytes)
+[    3.690000] TCP: Hash tables configured (established 2048 bind 2048)
+[    3.690000] UDP hash table entries: 256 (order: 1, 8192 bytes)
+[    3.700000] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+[    3.700000] NET: Registered protocol family 1
+[    3.710000] RPC: Registered named UNIX socket transport module.
+[    3.710000] RPC: Registered udp transport module.
+[    3.720000] RPC: Registered tcp transport module.
+[    3.720000] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    3.730000] Crashlog allocated RAM at address 0x3f00000
+[    3.740000] VFS: Disk quotas dquot_6.6.0
+[    3.740000] VFS: Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[    3.750000] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    3.750000] Installing knfsd (copyright (C) 1996 okir@monad.swb.de).
+[    3.760000] jffs2: version 2.2 (NAND) (SUMMARY) (LZMA) (RTIME) (CMODE_PRIORITY) (c) 2001-2006 Red Hat, Inc.
+[    3.770000] async_tx: api initialized (async)
+[    3.770000] bounce: pool size: 64 pages
+[    3.780000] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 252)
+[    3.780000] io scheduler noop registered
+[    3.790000] io scheduler deadline registered (default)
+[    3.790000] Serial: 8250/16550 driver, 3 ports, IRQ sharing disabled
+[    3.800000] console [ttyS0] disabled
+[    3.800000] 1e000c00.uartlite: ttyS0 at MMIO 0x1e000c00 (irq = 33, base_baud = 3125000) is a 16550A
+[    3.810000] console [ttyS0] enabled
+[    3.810000] console [ttyS0] enabled
+[    3.810000] bootconsole [early0] disabled
+[    3.810000] bootconsole [early0] disabled
+[    3.820000] ahci 0000:01:00.0: SSS flag set, parallel bus scan disabled
+[    3.830000] ahci 0000:01:00.0: AHCI 0001.0200 32 slots 2 ports 6 Gbps 0x3 impl IDE mode
+[    3.830000] ahci 0000:01:00.0: flags: 64bit ncq sntf stag led clo pmp pio slum part ccc sxs 
+[    3.840000] scsi host0: ahci
+[    3.850000] scsi host1: ahci
+[    3.850000] ata1: SATA max UDMA/133 abar m512@0x60000000 port 0x60000100 irq 11
+[    3.860000] ata2: SATA max UDMA/133 abar m512@0x60000000 port 0x60000180 irq 11
+[    3.860000] ahci 0000:02:00.0: SSS flag set, parallel bus scan disabled
+[    3.870000] ahci 0000:02:00.0: AHCI 0001.0200 32 slots 2 ports 6 Gbps 0x3 impl IDE mode
+[    3.880000] ahci 0000:02:00.0: flags: 64bit ncq sntf stag led clo pmp pio slum part ccc sxs 
+[    3.880000] scsi host2: ahci
+[    3.890000] scsi host3: ahci
+[    3.890000] ata3: SATA max UDMA/133 abar m512@0x60100000 port 0x60100100 irq 31
+[    3.900000] ata4: SATA max UDMA/133 abar m512@0x60100000 port 0x60100180 irq 31
+[    3.900000] ahci 0000:03:00.0: SSS flag set, parallel bus scan disabled
+[    3.910000] ahci 0000:03:00.0: AHCI 0001.0200 32 slots 2 ports 6 Gbps 0x3 impl IDE mode
+[    3.920000] ahci 0000:03:00.0: flags: 64bit ncq sntf stag led clo pmp pio slum part ccc sxs 
+[    3.920000] scsi host4: ahci
+[    3.930000] scsi host5: ahci
+[    3.930000] ata5: SATA max UDMA/133 abar m512@0x60200000 port 0x60200100 irq 32
+[    3.940000] ata6: SATA max UDMA/133 abar m512@0x60200000 port 0x60200180 irq 32
+[    3.940000] MediaTek Nand driver init, version v2.1 Fix AHB virt2phys error
+[    3.950000] spi-mt7621 1e000b00.spi: sys_freq: 160000000
+[    3.950000] m25p80 spi32766.0: using chunked io (size=32)
+[    3.960000] m25p80 spi32766.0: w25q256 (32768 Kbytes)
+[    3.960000] 4 ofpart partitions found on MTD device spi32766.0
+[    3.970000] Creating 4 MTD partitions on "spi32766.0":
+[    3.970000] 0x000000000000-0x000000030000 : "u-boot"
+[    3.980000] 0x000000030000-0x000000040000 : "u-boot-env"
+[    3.980000] 0x000000040000-0x000000050000 : "factory"
+[    3.990000] 0x000000050000-0x000002000000 : "firmware"
+[    4.040000] 2 uimage-fw partitions found on MTD device firmware
+[    4.040000] 0x000000050000-0x00000028ca35 : "kernel"
+[    4.050000] 0x00000028ca35-0x000002000000 : "rootfs"
+[    4.050000] mtd: device 5 (rootfs) set to be root filesystem
+[    4.060000] 1 squashfs-split partitions found on MTD device rootfs
+[    4.060000] 0x000001060000-0x000002000000 : "rootfs_data"
+[    4.070000] netif_napi_add() called with weight 128 on device eth%d
+[    4.090000] libphy: mdio: probed
+[    4.250000] ata3: SATA link down (SStatus 0 SControl 300)
+[    4.290000] ata5: SATA link down (SStatus 0 SControl 300)
+[    4.410000] ata1: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+[    4.410000] ata1.00: ATA-9: WDC WDS100T1B0A-00H9H0, X41100WD, max UDMA/133
+[    4.420000] ata1.00: 1953525168 sectors, multi 1: LBA48 NCQ (depth 31/32), AA
+[    4.420000] ata1.00: configured for UDMA/133
+[    4.430000] scsi 0:0:0:0: Direct-Access     ATA      WDC WDS100T1B0A- 00WD PQ: 0 ANSI: 5
+[    4.440000] sd 0:0:0:0: [sda] 1953525168 512-byte logical blocks: (1.00 TB/932 GiB)
+[    4.440000] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[    4.440000] sd 0:0:0:0: [sda] Write Protect is off
+[    4.440000] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    4.450000]  sda: sda1 sda2 sda3
+[    4.450000] sd 0:0:0:0: [sda] Attached SCSI disk
+[    4.720000] mtk_soc_eth 1e100000.ethernet: loaded mt7530 driver
+[    4.730000] mtk_soc_eth 1e100000.ethernet eth0: mediatek frame engine at 0xbe100000, irq 10
+[    4.730000] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    4.740000] ehci-pci: EHCI PCI platform driver
+[    4.740000] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    4.750000] ohci-platform: OHCI generic platform driver
+[    4.750000] xhci-mtk 1e1c0000.xhci: xHCI Host Controller
+[    4.760000] xhci-mtk 1e1c0000.xhci: new USB bus registered, assigned bus number 1
+[    4.770000] xhci-mtk 1e1c0000.xhci: hcc params 0x01401198 hci version 0x96 quirks 0x00210010
+[    4.770000] xhci-mtk 1e1c0000.xhci: irq 29, io mem 0x1e1c0000
+[    4.780000] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[    4.790000] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    4.790000] usb usb1: Product: xHCI Host Controller
+[    4.800000] usb usb1: Manufacturer: Linux 4.4.52-gnu xhci-hcd
+[    4.800000] usb usb1: SerialNumber: 1e1c0000.xhci
+[    4.810000] hub 1-0:1.0: USB hub found
+[    4.810000] hub 1-0:1.0: 2 ports detected
+[    4.810000] xhci-mtk 1e1c0000.xhci: xHCI Host Controller
+[    4.820000] xhci-mtk 1e1c0000.xhci: new USB bus registered, assigned bus number 2
+[    4.820000] usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+[    4.830000] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003
+[    4.840000] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    4.840000] usb usb2: Product: xHCI Host Controller
+[    4.850000] usb usb2: Manufacturer: Linux 4.4.52-gnu xhci-hcd
+[    4.850000] usb usb2: SerialNumber: 1e1c0000.xhci
+[    4.860000] hub 2-0:1.0: USB hub found
+[    4.860000] hub 2-0:1.0: 1 port detected
+[    4.870000] usbcore: registered new interface driver usb-storage
+[    4.870000] mt7621_wdt 1e000100.wdt: Initialized
+[    4.880000] softdog: Software Watchdog Timer: 0.08 initialized. soft_noboot=0 soft_margin=60 sec soft_panic=0 (nowayout=0)
+[    4.890000] md: linear personality registered for level -1
+[    4.890000] md: raid0 personality registered for level 0
+[    4.900000] md: raid1 personality registered for level 1
+[    4.900000] md: raid10 personality registered for level 10
+[    4.910000] md: raid6 personality registered for level 6
+[    4.910000] md: raid5 personality registered for level 5
+[    4.910000] md: raid4 personality registered for level 4
+[    4.920000] device-mapper: ioctl: 4.34.0-ioctl (2015-10-28) initialised: dm-devel@redhat.com
+[    4.930000] sdhci: Secure Digital Host Controller Interface driver
+[    4.930000] sdhci: Copyright(c) Pierre Ossman
+[    4.940000] sdhci-pltfm: SDHCI platform and OF driver helper
+[    4.940000] MTK MSDC device init.
+[    4.950000] SET_IOS: CLK(0kHz), BUS(PUSHPULL), BW(1), PWR(UP), VDD(3.30v), TIMING(LEGACY)SET_IOS: CLK(400kHz), BUS(PUSHPULL), BW(1), PWR(ON), VDD(3.30v), TIMING(LEGACY)
+[    4.990000] SET_IOS: CLK(0kHz), BUS(PUSHPULL), BW(1), PWR(OFF), VDD(1.50v), TIMING(LEGACY)[    4.990000] mtk-sd: MediaTek MT6575 MSDC Driver
+[    4.990000] NET: Registered protocol family 10
+[    5.000000] NET: Registered protocol family 17
+[    5.000000] bridge: automatic filtering via arp/ip/ip6tables has been deprecated. Update your scripts to load br_netfilter if you need this.
+[    5.000000] 8021q: 802.1Q VLAN Support v1.8
+[    5.000000] hctosys: unable to open rtc device (rtc0)
+[    5.020000] ata2: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+[    5.020000] ata2.00: ATA-9: WDC WD10JPVX-00JC3T0, 01.01A01, max UDMA/133
+[    5.020000] ata2.00: 1953525168 sectors, multi 0: LBA48 NCQ (depth 31/32), AA
+[    5.020000] ata2.00: configured for UDMA/133
+[    5.020000] scsi 1:0:0:0: Direct-Access     ATA      WDC WD10JPVX-00J 1A01 PQ: 0 ANSI: 5
+[    5.020000] sd 1:0:0:0: [sdb] 1953525168 512-byte logical blocks: (1.00 TB/932 GiB)
+[    5.020000] sd 1:0:0:0: [sdb] 4096-byte physical blocks
+[    5.020000] sd 1:0:0:0: Attached scsi generic sg1 type 0
+[    5.020000] sd 1:0:0:0: [sdb] Write Protect is off
+[    5.020000] sd 1:0:0:0: [sdb] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    5.080000] Waiting 5 sec before mounting root device...
+[    5.130000] usb 1-2: new high-speed USB device number 2 using xhci-mtk
+[    5.270000] usb 1-2: New USB device found, idVendor=1a40, idProduct=0101
+[    5.270000] usb 1-2: New USB device strings: Mfr=0, Product=1, SerialNumber=0
+[    5.280000] usb 1-2: Product: USB 2.0 Hub
+[    5.280000] hub 1-2:1.0: USB hub found
+[    5.280000] hub 1-2:1.0: 4 ports detected
+[    5.310000]  sdb: sdb1
+[    5.310000] sd 1:0:0:0: [sdb] Attached SCSI disk
+[    5.370000] ata4: SATA link down (SStatus 0 SControl 300)
+[    5.580000] mtk_soc_eth 1e100000.ethernet eth0: port 4 link up
+[    5.720000] ata6: SATA link down (SStatus 0 SControl 300)
+[    5.790000] mtk_soc_eth 1e100000.ethernet eth0: port 0 link up
+[   10.100000] md: Waiting for all devices to be available before autodetect
+[   10.100000] md: If you don't use raid, use raid=noautodetect
+[   10.110000] md: Autodetecting RAID arrays.
+[   10.110000] md: Scanned 0 and added 0 devices.
+[   10.110000] md: autorun ...
+[   10.120000] md: ... autorun DONE.
+[   10.120000] VFS: Mounted root (squashfs filesystem) readonly on device 31:5.
+[   10.130000] devtmpfs: mounted
+[   10.140000] Freeing unused kernel memory: 232K (806d6000 - 80710000)
+[   10.180000] random: nonblocking pool is initialized
+[   10.560000] Waiting disk spinup and searching for partition GNUBEE-ROOT...done.
+[   16.830000] EXT4-fs (sda2): couldn't mount as ext3 due to feature incompatibilities
+[   16.840000] EXT4-fs (sda2): mounted filesystem with ordered data mode. Opts: (null)
+[   16.850000] Partition GNUBEE-ROOT found. Starting...
+[   20.970000] systemd[1]: systemd 215 running in system mode. (+PAM +AUDIT +SELINUX +IMA +SYSVINIT +LIBCRYPTSETUP +GCRYPT +ACL +XZ -SECCOMP -APPARMOR)
+[   20.980000] systemd[1]: Detected architecture 'mips'.
+
+Welcome to Debian GNU/Linux 8 (jessie)!
+
+[   21.010000] systemd[1]: Set hostname to <gnubee-pc1.gnubee>.
+[   21.120000] systemd[1]: Cannot add dependency job for unit dbus.socket, ignoring: Unit dbus.socket failed to load: No such file or directory.
+[   21.130000] systemd[1]: Cannot add dependency job for unit display-manager.service, ignoring: Unit display-manager.service failed to load: No such file or directory.
+[   21.150000] systemd[1]: Starting Forward Password Requests to Wall Directory Watch.
+[   21.150000] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[   21.160000] systemd[1]: Expecting device dev-ttyS0.device...
+         Expecting device dev-ttyS0.device...
+[   21.190000] systemd[1]: Starting Remote File Systems (Pre).
+[  OK  ] Reached target Remote File Systems (Pre).
+[   21.210000] systemd[1]: Reached target Remote File Systems (Pre).
+[   21.210000] systemd[1]: Starting Dispatch Password Requests to Console Directory Watch.
+[   21.220000] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[   21.230000] systemd[1]: Starting Paths.
+[  OK  ] Reached target Paths.
+[   21.250000] systemd[1]: Reached target Paths.
+[   21.250000] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[   21.260000] systemd[1]: Starting Encrypted Volumes.
+[  OK  ] Reached target Encrypted Volumes.
+[   21.290000] systemd[1]: Reached target Encrypted Volumes.
+[   21.290000] systemd[1]: Starting Swap.
+[  OK  ] Reached target Swap.
+[   21.320000] systemd[1]: Reached target Swap.
+[   21.320000] systemd[1]: Starting Root Slice.
+[  OK  ] Created slice Root Slice.
+[   21.350000] systemd[1]: Created slice Root Slice.
+[   21.350000] systemd[1]: Starting User and Session Slice.
+[  OK  ] Created slice User and Session Slice.
+[   21.380000] systemd[1]: Created slice User and Session Slice.
+[   21.380000] systemd[1]: Starting /dev/initctl Compatibility Named Pipe.
+[  OK  ] Listening on /dev/initctl Compatibility Named Pipe.
+[   21.410000] systemd[1]: Listening on /dev/initctl Compatibility Named Pipe.
+[   21.410000] systemd[1]: Starting Delayed Shutdown Socket.
+[  OK  ] Listening on Delayed Shutdown Socket.
+[   21.440000] systemd[1]: Listening on Delayed Shutdown Socket.
+[   21.440000] systemd[1]: Starting Journal Socket (/dev/log).
+[  OK  ] Listening on Journal Socket (/dev/log).
+[   21.470000] systemd[1]: Listening on Journal Socket (/dev/log).
+[   21.470000] systemd[1]: Starting udev Kernel Socket.
+[  OK  ] Listening on udev Kernel Socket.
+[   21.500000] systemd[1]: Listening on udev Kernel Socket.
+[   21.500000] systemd[1]: Starting udev Control Socket.
+[  OK  ] Listening on udev Control Socket.
+[   21.530000] systemd[1]: Listening on udev Control Socket.
+[   21.530000] systemd[1]: Starting Journal Socket.
+[  OK  ] Listening on Journal Socket.
+[   21.560000] systemd[1]: Listening on Journal Socket.
+[   21.560000] systemd[1]: Starting System Slice.
+[  OK  ] Created slice System Slice.
+[   21.590000] systemd[1]: Created slice System Slice.
+[   21.590000] systemd[1]: Starting File System Check on Root Device...
+         Starting File System Check on Root Device...
+[   21.650000] systemd[1]: Starting system-getty.slice.
+[  OK  ] Created slice system-getty.slice.
+[   21.670000] systemd[1]: Created slice system-getty.slice.
+[   21.670000] systemd[1]: Starting system-serial\x2dgetty.slice.
+[  OK  ][   21.680000] systemd[1]: Created slice system-serial\x2dgetty.slice.
+ Created slice s[   21.680000] systemd[1]: Starting Increase datagram queue length...
+ystem-serial\x2dgetty.slice.
+         Starting [   21.690000] systemd[1]: Started Set Up Additional Binary Formats.
+Increase datagra[   21.700000] systemd[1]: Starting udev Coldplug all Devices...
+m queue length...
+         Starting udev Coldpl[   21.710000] systemd[1]: Mounting Debug File System...
+ug all Devices...
+         Mounting Debug File System...
+[   21.720000] systemd[1]: Starting Load Kernel Modules...
+         Starting Load Kernel Modules...
+[   21.760000] systemd[1]: Mounting POSIX Message Queue File System...
+         Mounting POSIX Message Queue File System...
+[   21.790000] systemd[1]: Started Create list of required static device nodes for the current kernel.
+[   21.790000] systemd[1]: Starting Create Static Device Nodes in /dev...
+         Starting Create Static Device Nodes in /dev...
+[   21.820000] systemd[1]: Mounted Huge Pages File System.
+[   21.820000] systemd[1]: Starting Slices.
+[  OK  ] Reached target Slices.
+[   21.850000] systemd[1]: Reached target Slices.
+[  OK  ] Mounted POSIX Message Queue File System.
+[   21.870000] systemd[1]: Mounted POSIX Message Queue File System.
+[  OK  ] Mounted Debug File System.
+[   21.890000] systemd[1]: Mounted Debug File System.
+[  OK  ] Started File System Check on Root Device.
+[   21.910000] systemd[1]: Started File System Check on Root Device.
+[  OK  ] Started Increase datagram queue length.
+[   21.940000] systemd[1]: Started Increase datagram queue length.
+[  OK  ] Started Load Kernel Modules.
+[   22.000000] systemd[1]: Started Load Kernel Modules.
+[  OK  ] Started Create Static Device Nodes in /dev.
+[   22.020000] systemd[1]: Started Create Static Device Nodes in /dev.
+[  OK  ] Started udev Coldplug all Devices.
+[   22.050000] systemd[1]: Started udev Coldplug all Devices.
+[   22.110000] systemd[1]: Starting udev Kernel Device Manager...
+         Starting udev Kernel Device Manager...
+[   22.200000] systemd[1]: Mounted Configuration File System.
+[   22.200000] systemd[1]: Mounted FUSE Control File System.
+[   22.210000] systemd[1]: Starting Apply Kernel Variables...
+[   22.210000] systemd-udevd[593]: starting version 215
+         Starting Apply Kernel Variables...
+[   22.240000] systemd[1]: Starting Syslog Socket.
+[  OK  ] Listening on Syslog Socket.
+[   22.260000] systemd[1]: Listening on Syslog Socket.
+[   22.260000] systemd[1]: Starting Sockets.
+[  OK  ] Reached target Sockets.
+[   22.290000] systemd[1]: Reached target Sockets.
+[   22.290000] systemd[1]: Starting Journal Service...
+         Starting Journal Service...
+[  OK  ] Started Journal Service.
+[   22.380000] systemd[1]: Started Journal Service.
+         Starting Remount Root and Kernel File Systems...
+[  OK  ] Started udev Kernel Device Manager.
+[   22.410000] EXT4-fs (sda2): re-mounted. Opts: errors=remount-ro
+[  OK  ] Started Apply Kernel Variables.
+[  OK  ] Started Remount Root and Kernel File Systems.
+[  OK  ] Found device /dev/ttyS0.
+[   22.483223] systemd-fsck[573]: GNUBEE-ROOT: clean, 14741/1097728 files, 204335/4390845 blocks
+         Starting Various fixups to make systemd work better on Debian...
+         Starting Load/Save Random Seed...
+[  OK  ] Reached target Local File Systems (Pre).
+[  OK  ] Reached target Local File Systems.
+[  OK  ] Reached target Remote File Systems.
+         Starting Trigger Flushing of Journal to Persistent Storage...
+         Starting Create Volatile Files and Directories...
+         Starting Copy rules generated while the root was ro...
+[  OK  ] Started Various fixups to make systemd work better on Debian.
+[  OK  ] Started Load/Save Random Seed.
+[  OK  ] Started Create Volatile Files and Directories.
+[  OK  ] Started Copy rules generated while the root was ro.
+[   22.890000] systemd-journald[620]: Received request to flush runtime journal from PID 1
+[  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
+         Starting Update UTMP about System Boot/Shutdown...
+         Starting LSB: Raise network interfaces....
+[  OK  ] Started Update UTMP about System Boot/Shutdown.
+[  OK  ] Started LSB: Raise network interfaces..
+[  OK  ] Reached target Network.
+[  OK  ] Reached target System Initialization.
+[  OK  ] Reached target Timers.
+[  OK  ] Reached target Basic System.
+         Starting Regular background program processing daemon...
+[  OK  ] Started Regular background program processing daemon.
+         Starting OpenBSD Secure Shell server...
+[  OK  ] Started OpenBSD Secure Shell server.
+         Starting /etc/rc.local Compatibility...
+         Starting System Logging Service...
+         Starting Permit User Sessions...
+[  OK  ] Started System Logging Service.
+[  OK  ] Started Permit User Sessions.
+[   23.900000] IPv6: eth0.2: IPv6 duplicate address fe80::7aa3:51ff:feab:b85c detected!
+[  OK  ] Started /etc/rc.local Compatibility.
+         Starting Serial Getty on ttyS0...
+[  OK  ] Started Serial Getty on ttyS0.
+[  OK  ] Reached target Login Prompts.
+[  OK  ] Reached target Multi-User System.
+[  OK  ] Reached target Graphical Interface.
+         Starting Update UTMP about System Runlevel Changes...
+[  OK  ] Started Update UTMP about System Runlevel Changes.
+
+Debian GNU/Linux 8 gnubee-pc1.gnubee ttyS0
+
+gnubee-pc1 login: root
+Password: GnuBee
+Linux gnubee-pc1.gnubee 4.4.52-gnu #0 SMP Wed Jul 5 16:50:03 2017 mips
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+root@gnubee-pc1:~# 
+
+root@gnubee-pc1:~# wget https://raw.githubusercontent.com/gnubee-git/gnubee-git.github.io/master/debian/debian-modules-install
+<...>
+Saving to: 'debian-modules-install'
+<..>
+root@gnubee-pc1:~# sh debian-modules-install 
+<..>
+Saving to: 'modules.4.4.52-gnu.tar.gz'
+
+modules.4.4.52-gnu. 100%[=====================>]   6.91M  7.99MB/s   in 0.9s   
+
+2017-09-21 16:36:36 (7.99 MB/s) - 'modules.4.4.52-gnu.tar.gz' saved [7242702/7242702]
+
+./modules.order
+./lib/crc-ccitt.ko
+<..>
+./drivers/ata/libahci.ko
+root@gnubee-pc1:~# 

@@ -1,0 +1,64 @@
+---
+layout: default
+title: Install Debian
+---
+
+## Debian
+
+The Debian installation is documented [here](install_debian.html) as several points have to be considered.
+You should be familiar with Debian or be familiar using linux system commands on the command line.
+
+
+### download and install the firmware supporting Debina
+
+Download one the following two files
+
+1. https://github.com/gnubee-git/gnubee-git.github.io/raw/master/debian/openwrt-ramips-mt7621-gb-n1-squashfs-sysupgrade.bin
+
+(older "official" kernel from SoC vendor, very stable and have support for keeping the Debian root on the mmc slot)
+
+2. https://github.com/gnubee-git/gnubee-git.github.io/raw/master/debian/librecmc-ramips-mt7621-gb-pc1-squashfs-sysupgrade_2017-07-22.bin
+  
+(newer kernel, with some support and improvements being worked out actively by us and the LibreCMC community)
+
+### Upgrade your firmware ussing the downloaded file
+
+The exact procedure is explained **[here](install_firmware.html)**
+
+Reboot by entering the command `reboot`.
+
+### Access the newly installed kernel via SSH or the USB-2-UART
+
+You can either activate the SSH access via built-in webserver on [http://192.168.10l](http://192.168.10l) or via  USB-2-UART 
+as explained in [USB_to_UART](/USB_to_UART/README.html)
+
+If you want to install Debian on a hard disk yo must format (at least) one partitions with the ext4 file system. Think a while on which partition scheme you want to use.
+
+You can use `fdisk` paritioning tool or partition the HD on another system. For my 1 TB hard disk I decide to create the following partitions using a GPT partition table:
+
+    /dev/sda1 1 GB ext4 named boot
+    /dev/sda2 10 GB ext4 named data
+    /dev/sda3 rest ext4 named data
+
+Afterward run in the shell run the following commands
+
+     wget --no-check-certificate https://raw.githubusercontent.com/gnubee-git/GnuBee_Docs/master/GB-PC1/scripts/jessie_3.10.14/debian-jessie-install
+     sh debian-jessie-install
+
+You will be asked where (what device) to install debian on. In my case I used /dev/sda2. You find the complete log [here](logs/install_debian.log).
+
+Once  if finishes type `reboot` and the new debian system should come up. You find the boot log [here](logs/boot_debian.log).
+
+If you want to access the new Debian system via ssh, you must connect now the **blue** RJ-45 to your network and consult your DHCP server to see, which IP-address was assigned to it. In my case it was 192.168.0.73 and running `ssh root@192.168.073` got me to the login.
+
+Once Debian is up you may log in as user root with the password GnuBee. You should change it. 
+
+You must install more kernel modules running the following commands
+
+    wget https://raw.githubusercontent.com/gnubee-git/gnubee-git.github.io/master/debian/debian-modules-install
+    sh debian-modules-install
+
+Now you are ready to install more packages. There are quite a few I cannot live without, there I ran
+
+    apt-get update
+    apt-get install vim-nox etckeeper htop iotop parted smartmontools

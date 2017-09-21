@@ -1,0 +1,25 @@
+
+Assemble the GnuBee Personal Cloud One as shown in the Photos.
+
+1. Remove 4 brackets and 8 screws from the Hardware bag.
+    Notes 1 : 
+    The short arm of the bracket goes to the PCBA while the long arm goes to the side plate.
+    Note 2 : 
+    The brackets in the red box have been modified to clear components on the PCBA.
+    These brackets are to be installed on the PCBA as indicated with a red X.
+	
+
+2. Photo shows the brackets installed on the PCBA.
+	Only lightly tighten these screws at this stage of assembly.
+	This will ease the installation of the side plates in the next step. 
+
+3. Photo shows the PCBA with brackets installed.
+
+4. Photo shows 1 side plate installed.
+
+5. Photo shows both side plates installed ... time to tighten all 8 screws.
+
+6. Ready to Install Drives !
+
+7. Photo shows a 4TB Hard Drive installed ...  
+   
