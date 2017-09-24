@@ -15,11 +15,11 @@ Download one the following two files
 
 1. https://github.com/gnubee-git/gnubee-git.github.io/raw/master/debian/openwrt-ramips-mt7621-gb-n1-squashfs-sysupgrade.bin
 
-(older "official" kernel from SoC vendor, very stable and have support for keeping the Debian root on the mmc slot)
+older "official" kernel from SoC vendor, very stable and have support for keeping the Debian root on the mmc slot. Boots debian stretch on the mmc slot, too.
 
 2. https://github.com/gnubee-git/gnubee-git.github.io/raw/master/debian/librecmc-ramips-mt7621-gb-pc1-squashfs-sysupgrade_2017-07-22.bin
   
-(newer kernel, with some support and improvements being worked out actively by us and the LibreCMC community)
+newer kernel, with some support and improvements being worked out actively by us and the LibreCMC community. Fails booting debian stretch on the mmc slot.
 
 ### Upgrade your firmware ussing the downloaded file
 
@@ -53,10 +53,14 @@ If you want to access the new Debian system via ssh, you must connect now the **
 
 Once Debian is up you may log in as user root with the password GnuBee. You should change it. 
 
+### Install kernel modules
+
 You must install more kernel modules running the following commands
 
     wget https://raw.githubusercontent.com/gnubee-git/gnubee-git.github.io/master/debian/debian-modules-install
     sh debian-modules-install
+
+### Install more packages
 
 Now you are ready to install more packages. There are quite a few I cannot live without, there I ran
 
