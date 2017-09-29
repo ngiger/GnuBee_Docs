@@ -9,17 +9,11 @@ The Debian installation is documented [here](install_debian.html) as several poi
 You should be familiar with Debian or be familiar using linux system commands on the command line.
 
 
-### download and install the firmware supporting Debina
+### download and install the firmware supporting Debian
 
-Download one the following two files
+Download **https://github.com/gnubee-git/gnubee-git.github.io/raw/master/debian/openwrt-ramips-mt7621-gb-pc1-squashfs-sysupgrade_2017-03-01.bin**
 
-1. https://github.com/gnubee-git/gnubee-git.github.io/raw/master/debian/openwrt-ramips-mt7621-gb-n1-squashfs-sysupgrade.bin
-
-older "official" kernel from SoC vendor, very stable and have support for keeping the Debian root on the mmc slot. Boots debian stretch on the mmc slot, too.
-
-2. https://github.com/gnubee-git/gnubee-git.github.io/raw/master/debian/librecmc-ramips-mt7621-gb-pc1-squashfs-sysupgrade_2017-07-22.bin
-  
-newer kernel, with some support and improvements being worked out actively by us and the LibreCMC community. Fails booting debian stretch on the mmc slot.
+Note: The https://github.com/gnubee-git/gnubee-git.github.io/raw/master/debian/librecmc-ramips-mt7621-gb-pc1-squashfs-sysupgrade_2017-07-22.bin has a bug with the network setup and is therefore NOT recommended! [Details](https://github.com/gnubee-git/GnuBee_Docs/issues/18)
 
 ### Upgrade your firmware ussing the downloaded file
 
