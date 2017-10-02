@@ -12,7 +12,7 @@ You should be familiar with Debian or be familiar using linux system commands on
 
 ## OpenMediaVault
 
-Looking for somebody to document the solution or till I have time to do it myself.
+The OpenMediaVault installation is documented **[here](install_omv.html)** as several points have to be considered. You should be familiar with Debian or be familiar using linux system commands on the command line
 
 ## LEDE
 
