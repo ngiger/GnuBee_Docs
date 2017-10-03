@@ -6,6 +6,14 @@ permalink: index.html
 **GnuBee PC-1 is shipping since mid september 2017**
 
 
+Disclaimer {#disclaimer}
+----------
+
+This project is **NOT** endorsed in any way by the Free Software Foundation [FSF](http://www.fsf.org). But the project is heavily influenced by the philosophy of Free Software.
+
+We received on October, 2 2017 an email from the FSF requesting to not use the name GnuBee. As soon as a new name is determined we will update this site. The e-mail contains the sentence with *Thank you so much for working to make freedom-respecting hardware*
+
+
 Introduction {#introduction}
 ----------
 
