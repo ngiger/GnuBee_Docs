@@ -1,9 +1,7 @@
-# LEDE-project for GB-PC1
+# LEDE-project UNSTABLE for GB-PC1
 
 This Directory contains the current build of the LEDE-project for the GnuBee Personal Cloud One.
-These builds are based on stable branch of LEDE 17.01
-
-Some older builds are still available in dated sub-directories.
+This firmware is built using https://github.com/lede-project/source the unstable branch of LEDE otherwise known as trunk.
 
 Currently we are making two builds available.
 The 'lite' version contains a package set for running a basic NAS.
