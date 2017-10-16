@@ -15,9 +15,9 @@ Download **https://github.com/gnubee-git/gnubee-git.github.io/raw/master/debian/
 
 Note: The https://github.com/gnubee-git/gnubee-git.github.io/raw/master/debian/librecmc-ramips-mt7621-gb-pc1-squashfs-sysupgrade_2017-07-22.bin has a bug with the network setup and is therefore NOT recommended! [Details](https://github.com/gnubee-git/GnuBee_Docs/issues/18)
 
-### Upgrade your firmware ussing the downloaded file
+### Upgrade your firmware using the downloaded file
 
-The exact procedure is explained **[here](install_firmware.html)**
+The exact procedure is explained **[here](https://github.com/gnubee-git/GnuBee_Docs/wiki/Install-firmware)**
 
 Reboot by entering the command `reboot`.
 
