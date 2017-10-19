@@ -7,7 +7,7 @@ title: Firmware Build
 
 https://github.com/gnubee-git/gnubee-openwrt (branch master, with official kernel from Soc vendor, Debian-compatible scripts) 
 
-https://github.com/gnubee-git/GnuBee-lede (branch lede-17-01 have Debian-compatible scripts)
+<!-- Being veri https://github.com/gnubee-git/GnuBee-lede (branch lede-17-01 have Debian-compatible scripts) -->
 
 https://gogs.librecmc.org/ldpinney/GnuBee-libreCMC
 
