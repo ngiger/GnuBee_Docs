@@ -9,7 +9,7 @@ https://github.com/gnubee-git/gnubee-openwrt (branch master, with official kerne
 
 <!-- Being verified 2017-10-19 - https://github.com/gnubee-git/GnuBee-lede (branch lede-17-01 have Debian-compatible scripts) -->
 
-https://gogs.librecmc.org/ldpinney/GnuBee-libreCMC
+https://gogs.librecmc.org/ldpinney/GnuBee-libreCMC (updated kernel, LibreCMC distribution)
 
 
 
