@@ -1,4 +1,5 @@
-
-386bd16a9a16f395c2900238ee403e4d5ffcc1fffa005d1baeb7ef87b57f5e30 *librecmc-ramips-mt7621-gb-pc1-full-sysupgrade.bin
-
-e8a83af23b32f72f0b9562498545099e8717a949abe9c0bae56c140e3a887aad *librecmc-ramips-mt7621-gb-pc1-lite-sysupgrade.bin
+b742a5a7bb92abc9e81768c3ebeb57bf6379e18cfca4ba699fe8bbb377d6b0e9 *config.seed
+053c0f06c9ed7f4fc40f83b6ebf45d5ad1a3643b708384622362346757a7498e *librecmc-ramips-mt7621-device-gb-pc1.manifest
+6d3b727355f68724223d87f48d5790038de9b37cae81946712c5dc9becb8f551 *librecmc-ramips-mt7621-gb-pc1-squashfs-sysupgrade.bin
+84cb0d155a61eca664c77f69bff3dcdedaf4cf7f87b21ef16b4fee7ffe880588 *librecmc-ramips-mt7621-gb-pc2-squashfs-sysupgrade.bin
+aec6fc046e44aa6e93998b8a5165479726db369f6ade1f49e92bb5baa726736d *librecmc-ramips-mt7621.manifest
