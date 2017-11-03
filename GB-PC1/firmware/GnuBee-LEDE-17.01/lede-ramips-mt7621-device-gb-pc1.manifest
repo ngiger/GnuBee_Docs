@@ -1,8 +1,5 @@
-acl - 20160519-1
 alsa-lib - 1.1.0-1
 ar - 2.27-1
-ath9k-htc-firmware - 2016-09-21-42ad5367-1
-attr - 20160302-1
 avahi-dbus-daemon - 0.6.32-1
 badblocks - 1.43.3-2
 base-files - 173.1-r3560-79f57e422d
@@ -10,9 +7,6 @@ blkid - 2.29.2-1
 block-mount - 2017-06-30-bdcb075f-1
 btrfs-progs - 4.7.2-1
 busybox - 1.25.1-4
-ca-bundle - 20161130+nmu1
-ca-certificates - 20161130+nmu1
-carl9170-firmware - 2016-09-21-42ad5367-1
 cgdisk - 1.0.1-1
 chattr - 1.43.3-2
 cryptsetup - 1.7.2-1
@@ -33,17 +27,11 @@ glib2 - 2.50.2-2
 hd-idle - 1.04-2
 hostapd-common - 2016-12-19-ad02e79d-6
 iptables - 1.4.21-2
-iw - 4.9-1
 jshn - 2017-02-24-96305a3c-1
 jsonfilter - 2016-07-02-dea067ad-1
-kernel - 4.4.92-1-af79aaf56d296e0705c28ced7141b90c
+kernel - 4.4.92-1-f2d2ea0dd96c064f7a9a69915855a45f
 kmod-ata-ahci - 4.4.92-1
 kmod-ata-core - 4.4.92-1
-kmod-ath - 4.4.92+2017-01-31-3
-kmod-ath9k-common - 4.4.92+2017-01-31-3
-kmod-ath9k-htc - 4.4.92+2017-01-31-3
-kmod-carl9170 - 4.4.92+2017-01-31-3
-kmod-cfg80211 - 4.4.92+2017-01-31-3
 kmod-crypto-aead - 4.4.92-1
 kmod-crypto-crc32c - 4.4.92-1
 kmod-crypto-hash - 4.4.92-1
@@ -58,7 +46,6 @@ kmod-crypto-wq - 4.4.92-1
 kmod-dm - 4.4.92-1
 kmod-fs-autofs4 - 4.4.92-1
 kmod-fs-btrfs - 4.4.92-1
-kmod-fs-exfat - 4.4.92+2017-01-03-8d291f525ce6d88fe0d8b11b86fd5c2e900401d3-1
 kmod-fs-exportfs - 4.4.92-1
 kmod-fs-ext4 - 4.4.92-1
 kmod-fs-msdos - 4.4.92-1
@@ -85,7 +72,6 @@ kmod-lib-raid6 - 4.4.92-1
 kmod-lib-xor - 4.4.92-1
 kmod-lib-zlib-deflate - 4.4.92-1
 kmod-lib-zlib-inflate - 4.4.92-1
-kmod-mac80211 - 4.4.92+2017-01-31-3
 kmod-md-linear - 4.4.92-1
 kmod-md-mod - 4.4.92-1
 kmod-md-multipath - 4.4.92-1
@@ -93,7 +79,6 @@ kmod-md-raid0 - 4.4.92-1
 kmod-md-raid1 - 4.4.92-1
 kmod-md-raid10 - 4.4.92-1
 kmod-mmc - 4.4.92-1
-kmod-mt7601u - 4.4.92+2017-01-31-3
 kmod-nf-conntrack - 4.4.92-1
 kmod-nf-conntrack6 - 4.4.92-1
 kmod-nf-ipt - 4.4.92-1
@@ -117,7 +102,6 @@ kmod-usb-storage - 4.4.92-1
 kmod-usb-storage-extras - 4.4.92-1
 kmod-usb3 - 4.4.92-1
 lede-keyring - 2017-01-20-a50b7529-1
-libacl - 20160519-1
 libao - 1.2.0-1
 libattr - 20160302-1
 libavahi-client - 0.6.32-1
@@ -162,7 +146,6 @@ libncurses - 6.0-1
 libnl-tiny - 0.1-5
 libogg - 1.3.2-2
 libopenssl - 1.0.2k-1
-libpcre - 8.41-2
 libpopt - 1.16-1
 libpthread - 1.1.16-1
 libreadline - 7.0-1
@@ -179,7 +162,6 @@ libuci - 2016-07-04-e1bf4356-1
 libuci-lua - 2016-07-04-e1bf4356-1
 libuclient - 2017-09-06-24d6eded-1
 libusb-1.0 - 1.0.21-1
-libustream-openssl - 2016-07-02-ec80adaa-2
 libuuid - 2.29.2-1
 libvorbis - 1.3.5-1
 libxtables - 1.4.21-2
@@ -211,7 +193,6 @@ mdadm - 3.2.5-1
 mmc-utils - 2016-09-11-2cb6695e8dec00d887bdd5309d1b57d836fcd214-2
 mount-utils - 2.29.2-1
 mountd - 2016-12-19-dd5799c9-1
-mt7601u-firmware - 2016-09-21-42ad5367-1
 mtd - 21
 nano - 2.7.5-1
 ncdu - 1.12-1
@@ -242,9 +223,7 @@ uhttpd - 2017-08-19-3fd58e9b-1
 uhttpd-mod-ubus - 2017-08-19-3fd58e9b-1
 usbutils - 007-6
 usign - 2015-07-04-ef641914-1
-wget - 1.18-2
 wipefs - 2.29.2-1
-wireless-tools - 29-5
 xfs-fsck - 3.1.7-1
 xfs-growfs - 3.1.7-1
 xfs-mkfs - 3.1.7-1
