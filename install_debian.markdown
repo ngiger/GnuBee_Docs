@@ -11,9 +11,13 @@ You should be familiar with Debian or be familiar using linux system commands on
 
 ### download and install the firmware supporting Debian
 
-Download **https://github.com/gnubee-git/gnubee-git.github.io/raw/master/debian/openwrt-ramips-mt7621-gb-pc1-squashfs-sysupgrade_2017-03-01.bin**
+Download **https://github.com/gnubee-git/gnubee-git.github.io/raw/master/debian/openwrt-ramips-mt7621-gb-pc1-squashfs-sysupgrade_2017-03-01.bin** (offical Kernel 3.10.14 from Soc vendor)
 
-Note: The https://github.com/gnubee-git/gnubee-git.github.io/raw/master/debian/librecmc-ramips-mt7621-gb-pc1-squashfs-sysupgrade_2017-07-22.bin has a bug with the network setup and is therefore NOT recommended! [Details](https://github.com/gnubee-git/GnuBee_Docs/issues/18)
+or 
+
+https://github.com/gnubee-git/gnubee-git.github.io/raw/master/debian/librecmc-ramips-mt7621-gb-pc1-squashfs-sysupgrade_2017-11-18.bin (Kernel 4.4.87-gnu, with patches from Linux community) 
+
+Note: The firmware named "librecmc-ramips-mt7621-gb-pc1-squashfs-sysupgrade_2017-07-22.bin" has a bug with the network setup and is therefore NOT recommended! [Details](https://github.com/gnubee-git/GnuBee_Docs/issues/18)
 
 ### Upgrade your firmware using the downloaded file
 
@@ -23,8 +27,7 @@ Reboot by entering the command `reboot`.
 
 ### Access the newly installed kernel via SSH or the USB-2-UART
 
-You can either activate the SSH access via built-in webserver on [http://192.168.10l](http://192.168.10l) or via  USB-2-UART 
-as explained in [USB_to_UART](/USB_to_UART/README.html)
+You can either activate the SSH access via built-in webserver on [http://192.168.10.1](http://192.168.10.1) on eth0.1 (bridge-lan), connect the second Ethernet (eth0.2) to a switch and obtain an automatic address in your existing LAN, or use  or via  USB-2-UART, as explained in [USB_to_UART](/USB_to_UART/README.html)
 
 If you want to install Debian on a hard disk yo must format (at least) one partitions with the ext4 file system. Think a while on which partition scheme you want to use.
 
