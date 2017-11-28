@@ -11,11 +11,11 @@ You should be familiar with Debian or be familiar using linux system commands on
 
 ### download and install the firmware supporting Debian
 
-Download **https://github.com/gnubee-git/gnubee-git.github.io/raw/master/debian/openwrt-ramips-mt7621-gb-pc1-squashfs-sysupgrade_2017-03-01.bin** (offical Kernel 3.10.14 from Soc vendor)
+Download **https://github.com/gnubee-git/gnubee-git.github.io/raw/master/debian/openwrt-ramips-mt7621-gb-pc1-squashfs-sysupgrade_2017-03-01.bin** (offical Kernel 3.10.14 from Soc vendor, support install to SD card)
 
 or 
 
-https://github.com/gnubee-git/gnubee-git.github.io/raw/master/debian/librecmc-ramips-mt7621-gb-pc1-squashfs-sysupgrade_2017-11-18.bin (Kernel 4.4.87-gnu, with patches from Linux community) 
+https://github.com/gnubee-git/gnubee-git.github.io/raw/master/debian/librecmc-ramips-mt7621-gb-pc1-squashfs-sysupgrade_2017-11-18.bin (Kernel 4.4.87-gnu, with patches from Linux community, do not support install to SD card, because SD driver only work as a module) 
 
 Note: The firmware named "librecmc-ramips-mt7621-gb-pc1-squashfs-sysupgrade_2017-07-22.bin" has a bug with the network setup and is therefore NOT recommended! [Details](https://github.com/gnubee-git/GnuBee_Docs/issues/18)
 
