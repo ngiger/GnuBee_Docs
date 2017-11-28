@@ -69,7 +69,7 @@ error_partition(){
 
 choose_partition(){
   echo "Detecting connected partitions, please wait a few moments."
-  OPTIONS=`blkid | grep "/dev/sd\|/dev/mmcblk0p"`
+  OPTIONS=`blkid | grep "/dev/sd\|/dev/mmcblk0p\|/dev/md"`
   echo "$OPTIONS"
   echo -n "Choose partition to install (will be formatted !!!): ";
   read STR
