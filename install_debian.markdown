@@ -17,7 +17,13 @@ or
 
 https://github.com/gnubee-git/gnubee-git.github.io/raw/master/debian/librecmc-ramips-mt7621-gb-pc1-squashfs-sysupgrade_2017-11-28.bin (Kernel 4.4.87-gnu, with patches from Linux community, do not support install to SD card, because SD driver only work as a module) 
 
+
 Note: The firmware named "librecmc-ramips-mt7621-gb-pc1-squashfs-sysupgrade_2017-07-22.bin" has a bug with the network setup and is therefore NOT recommended! [Details](https://github.com/gnubee-git/GnuBee_Docs/issues/18)
+
+Sha256sums:
+c2794439b241bd0f71ccfd84f337662b44e3d2b6b6a30593d2d03d8b4136ad  openwrt-ramips-mt7621-gb-pc1-squashfs-sysupgrade_2017-03-01.bin
+e2fe4cd4f70dc04372d5a7dcf1443d6895cd3e797a65c1d9ec889d79db181493  librecmc-ramips-mt7621-gb-pc1-squashfs-sysupgrade_2017-11-28.bin
+
 
 ### Upgrade your firmware using the downloaded file
 
