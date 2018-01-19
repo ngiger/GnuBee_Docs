@@ -6,9 +6,17 @@ Most embedded System-on-chips come with an UART or TTL integrated into the Syste
 
 The GnuBee Personal Cloud routes the UART connection to a 3.5mm (1/8") Audio Jack for convenient use.
 
-The GnuBee USB to UART uses a Winchiphead CH340G USB to serial chip from Nanjing QinHeng Electronics Co.,Ltd. to convert the UART signal to USB.
+V1.0 uses a Winchiphead CH340G USB to serial chip from Nanjing QinHeng Electronics Co.,Ltd. to convert the UART signal to USB.
 
 The Linux kernel identifies this chipset as the "QinHeng Electronics HL-340 USB-Serial adapter"
+
+The GnuBee USB to UART V1.0 can be identified by the metal 3.5mm (1/8") Plug.
+
+V1.1 uses a Prolific PL2303HXD USB to serial chip to convert the UART signal to USB.
+
+The Linux kernel identifies this chipset as the "Prolific Technology, Inc. PL2303 Serial Port"
+
+The GnuBee USB to UART V1.1 can be identified by the molded plastic 3.5mm (1/8") Plug.
 
 Users of other Operating Systems can find drivers in the drivers directory.
 
