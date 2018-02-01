@@ -46,6 +46,8 @@ The GnuBee Personal Cloud One is supported by the LEDE-project in trunk.
 
 GnuBee started with a simple idea: instead of hacking commodity hardware, let’s build the toys we want to play with from scratch . We want to show the world what devices running free software can do. The Personal Cloud 1 is our first product, though we have others in the works. If the GB-PC1 is successful, there will be plenty of others to follow!
 
+If you want to buy it, please email "L. D. Pinney" <ldpinney@gmail.com>.
+
 How do we keep the cost of our devices down? Because we have both Chinese (Xiaoping) and US (Larry) roots, we have some major advantages over other teams. We don’t need to rent expensive living and work space in China (we stay with family!), and we don’t need to hire translators and other go-betweens. We can work directly with vendors and manufacturers. Because we are committed to working only with FLOSS projects, our software development costs are also reduced and distributed.
 
 ## Features & Specifications
