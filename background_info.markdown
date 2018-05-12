@@ -16,10 +16,10 @@ Besides the 6 interfaces for 2,5 SATA drives there is a slot for micro SD-cards 
 
 All the firmware discussed here, have the following common characteristics:
 
-* The mount a read/write overlay partition, where changes are preserverd over reoboots. This allows you to add more packages, download scripts, change password, etc.
+* They mount a read/write overlay partition, where changes are preserverd over reboots.  This allows you to add more packages, download scripts, change password, etc.
 * By default there is no root password.
 * After the startup you may access the device
-  * either with a USB-to-UART cable as 
+  * either with a USB-to-UART cable or
   * via a WebServer on 192.168.10.1 using the **black** ethernet RJ-45 connector
 
 Once you have install the firmware for Debian however, this pictures changes. So do not forget to read [this section](#debian_background).

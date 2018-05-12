@@ -3,7 +3,7 @@ title: FLOSS Devices at Reasonable Prices
 permalink: index.html
 ---
 
-**GnuBee PC-1 is shipping since mid september 2017**
+**GnuBee PC-1 (2.5” drives) and PC-2 (3.5” drives) are shipping from Crowd Supply**
 
 
 Disclaimer {#disclaimer}
@@ -17,15 +17,15 @@ We received on October, 2 2017 an email from the FSF requesting to not use the n
 Introduction {#introduction}
 ----------
 
-The GnuBee Personal Cloud One (GB-PC1) is a network-attached storage (NAS) device specifically engineered to run free, libre, open source software (FLOSS). The GB-PC1 has all the functionality of any commercial, proprietary NAS, but at a much lower cost and with the transparency, reliability, and accessibility advantages that come with using FLOSS.
+The GnuBee Personal Cloud One and Two (GB-PC1, GB-PC2) are network-attached storage (NAS) devices specifically engineered to run free, libre, open source software (FLOSS). The GB-PC has all the functionality of any commercial, proprietary NAS, but at a much lower cost and with the transparency, reliability, and accessibility advantages that come with using FLOSS.
 
 
 Free as in Freedom {#free}
 ----------------------------
 
-We designed the GnuBee Personal Cloud One with the Free Software Foundation’s Respects Your Freedom (RYF) certification in mind and have already initiated the application process with FSF.
+We designed the GnuBee Personal Cloud with the Free Software Foundation’s Respects Your Freedom (RYF) certification in mind and have already initiated the application process with FSF.
 
-The GnuBee Personal Cloud One can run several popular FLOSS suites for managing routers, NAS devices, or just general computing. These are some of the main suites the GB-PC1 can run:
+The GnuBee Personal Cloud can run several popular FLOSS suites for managing routers, NAS devices, or just general computing. These are some of the main suites the GB-PC1 can run:
 
 ## Debian
 
@@ -54,26 +54,29 @@ How do we keep the cost of our devices down? Because we have both Chinese (Xiaop
 
     Processor:
         MediaTek MT7621A
-        dual core, multi thread (Linux kernel sees four cores)
-        880 MHz, overclockable to 1.2 GHz)
+        dual core, multi thread (Linux kernel sees four processors)
+        880 MHz, overclockable to 1.2 GHz.
     Memory:
         512 MB DDR3 RAM (maximum amount for the MediaTek chip)
         soldered to main board
     Storage:
-        microSD card slot (tested up to 64 GB cards so far)
-        6 x 2.5” drives (HDD, SSD, or mix and match; drives not included)
+        microSD / SD card slot (tested up to 64 GB cards so far)
+        6 x 2.5” / 3.5” drives (HDD, SSD, or mix and match; drives not included)
         Recommended RAID levels are 0 and 1 under LVM and MD, and Linux MD RAID 10
     Connectivity:
-        2 x Gigabit Ethernet
+        2 x Gigabit Ethernet (3 on GB-PC2)
         1 x USB 3.0 port
         2 x USB 2.0 ports
         Serial port (3-pin J1 connector or 3.5 mm audio-type jack)
     Power:
         12 VDC @ 3 A maximum
         5.5 mm x 2.1 mm, center-positive barrel jack
-    Dimensions:
+    Dimensions (GB-PC1):
         Bounding box: 8.5” (L) x 2.75” (W) x 5.5” (H)
         Weight: ~210 g (without drives)
+    Dimensions (GB-PC2):
+        Bounding box: 8.5” (L) x 3.75” (W) x 5.5” (H)
+        Weight: ~454 g (without drives)
     Enclosure:
         2 x anodized aluminum side plates
         4 x threaded brackets and screws
@@ -83,5 +86,5 @@ How do we keep the cost of our devices down? Because we have both Chinese (Xiaop
 Versions {#versions}
 ---------
 
--   The GnuBee Personal Cloud One (GB-PC1) started shipping in September 2017
--   The GnuBee Personal Cloud Two (GB-PC2) will begin funding on Crowd Supply soon!
+-   The GnuBee Personal Cloud One (GB-PC1) started shipping in September 2017.
+-   The GnuBee Personal Cloud Two (GB-PC2) started shipping in January 2018.
