@@ -19,6 +19,12 @@ Introduction {#introduction}
 
 The GnuBee Personal Cloud One and Two (GB-PC1, GB-PC2) are network-attached storage (NAS) devices specifically engineered to run free, libre, open source software (FLOSS). The GB-PC has all the functionality of any commercial, proprietary NAS, but at a much lower cost and with the transparency, reliability, and accessibility advantages that come with using FLOSS.
 
+Reviews {#reviews}
+-------
+
+- Neil Brown [wrote about](https://lwn.net/Articles/743609/) the GnuBee for [LWN](https://lwn.net) with a focus on mainline kernel support.
+
+- Ben Sturmfels [blogged about](https://stumbles.id.au/getting-started-with-the-gnubee-personal-cloud-2-or-1.html) his experiences with the GnuBee-PC2.
 
 Free as in Freedom {#free}
 ----------------------------
