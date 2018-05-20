@@ -6,6 +6,7 @@ title: Contributing
 ## Documentation
 
 It should not be hard to spot errors or missing items in our documentation. If you know how to fill them, please let us know.
+These web pages are in the `gh-pages` branch of [https://github.com/ngiger/GnuBee_Docs].  Pull requests will be considered.
 
 ## Art work
 

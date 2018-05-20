@@ -16,13 +16,13 @@ Besides the 6 interfaces for 2,5 SATA drives there is a slot for micro SD-cards 
 
 All the firmware discussed here, have the following common characteristics:
 
-* The mount a read/write overlay partition, where changes are preserverd over reoboots. This allows you to add more packages, download scripts, change password, etc.
+* They mount a read/write overlay partition, where changes are preserverd over reboots.  This allows you to add more packages, download scripts, change password, etc.
 * By default there is no root password.
 * After the startup you may access the device
-  * either with a USB-to-UART cable as 
+  * either with a USB-to-UART cable or
   * via a WebServer on 192.168.10.1 using the **black** ethernet RJ-45 connector
 
-Once you have install the firmware for Debian however, this pictures changes. So do not forget to read [this section](#debian_background).
+Once you have installed the firmware for Debian however, this pictures changes. So do not forget to read [this section](#debian_background).
 
 ### Using [https://lede-project.org/](LEDE) or [libreCMC](https://www.librecmc.org/)
 
@@ -34,7 +34,7 @@ Wikpedia characterizes them as follows:
 
 Once you have installed/upgraded the firmware please look at the documentation of each distribution, as there are not many GnuBee specialities. And their built-in webserver for administration is easy to use.
 
-Cou can use the GnuBee PC1 as a router/firewall even without adding an SD-card or hard disk.
+You can use the GnuBee PC1 as a router/firewall even without adding an SD-card or hard disk.
 
 ### Using Debian or OpenMediaVault<a name="debian_background"></a>
 
@@ -43,9 +43,9 @@ Once you have installed the Debian specific firmware, the default network setup 
 * Uses the **blue** ethernet RJ-45 connector and gets IP address via DHCP
 * U-Boot loads a LEDE based kernel, which looks for EXT4 formatted partition(s) labelled `GNUBEE-ROOT`
 * Assumes that this partition contains a valid Debian system
-* Pivots (Replaces the early / by the first  `GNUBEE-ROOT` labelled EXT4 partition
+* Pivots (Replaces the early / by the first  `GNUBEE-ROOT` labelled EXT4 partition)
 * If no `GNUBEE-ROOT` found (eg. because you removed the disk drives/SD card), else
-** boots into a rescue kernel, where you 
+** boots into a rescue kernel, where you can
 ** access to a lot of tools (fdisk, fsck.ext4, tune2fs, ifconfig, etc)
 ** currently (Sept 2017) you are unable to install additional packages using opkg
 
